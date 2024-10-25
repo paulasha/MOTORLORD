@@ -1,0 +1,60 @@
+body {
+    background-color: #2b2f36;
+    font-family: Arial, sans-serif;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
+
+.left {
+    flex: 2;
+    color: #f5871f;
+    padding-right: 0; /* Eliminamos el padding para acercar la línea */
+}
+
+.left h1 {
+    .poppins-semibold {
+        font-family: "Poppins", sans-serif;
+        font-weight: 800;
+        font-style: normal;
+    }
+    font-size: 6em;
+    margin-right: 20px; /* Ajusta este valor para la distancia exacta */
+}
+
+.separator {
+    width: 2px;
+    background-color: #f5871f;
+    height: 50%;
+    margin-right: 20px; /* Ajusta la distancia entre la línea y el texto de la derecha */
+}
+
+.right {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.right p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.hidden {
+    display: none;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.right a {
+    color: #f5871f;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
