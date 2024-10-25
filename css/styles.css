@@ -1,0 +1,28 @@
+
+
+body {
+    margin: 0;
+    padding-bottom: 4rem;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--ff-body);
+    font-size: 18px;
+    line-height: 1.6;
+    background-color: black;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+.navbar {
+    background-color: black !important;
+}
+.navbar-brand img{
+    width: 200px
+}
+.navbar-item > a{
+  color: white;
+}
