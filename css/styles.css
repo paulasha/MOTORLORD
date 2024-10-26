@@ -8,7 +8,8 @@ body {
     font-family: var(--ff-body);
     font-size: 18px;
     line-height: 1.6;
-    background-color: black;
+    background-color: #2b2f36;
+    font-family: Arial, sans-serif;
 }
 
 img {
@@ -25,10 +26,8 @@ img {
 }
 .navbar-item > a{
   color: white;
-}body {
-    background-color: #2b2f36;
-    font-family: Arial, sans-serif;
 }
+
 .container {
     display: flex;
     justify-content: center;
