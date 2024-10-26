@@ -9,4 +9,11 @@ document.querySelector("#read-more").addEventListener("click", function(event) {
         extraText.style.display = "none";
         this.textContent = "Leer más";
     }
+
+
+    var typed = new Typed('#element', {
+        strings: ['<i>FERRARI</i> .', 'MERCEDES.', 'PORSCHE.'],
+        typeSpeed: 100,
+        loop: true,
+      });
 });
