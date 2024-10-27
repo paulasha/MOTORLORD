@@ -117,6 +117,12 @@ img {
 
 }
 
+.fa-chevron-down{
+  font-size: 2em;
+  margin-top: 1em;
+
+}
+
 
 #element{
     font-size: 2em;
@@ -125,4 +131,11 @@ img {
 }
 
 
+
+
+.pr-cont .row > * {
+    padding: 1rem 2rem;
+    background-color: rgb(213, 173, 251);
+    border: 1px rgb(176, 102, 244) solid;
+}
 
