@@ -33,7 +33,7 @@ img {
     top: 0;
     left: 0;
     width: 100%;
-    height: 120vh;
+    height: 100vh;
     color: white;
     display: flex;
     align-items: center;
@@ -44,14 +44,14 @@ img {
 
 /* Estilo del texto */
 #highlighted-text h1 {
-    font-size: 2.6em; /* Tamaño grande del texto */
+    font-size: 2em; /* Tamaño grande del texto */
     font-weight: bold;
-    font-style: italic;
     text-transform: uppercase;
     line-height: 1.2;
     margin: 0;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); /* Sombra suave */
     text-align: left; /* Alineación a la izquierda */
+    margin-top: 3.5em;
 }
 
 /* Ajuste de la imagen de fondo */
@@ -66,6 +66,7 @@ img {
 
 /* Fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 /* ABOUT US  */
 
@@ -226,7 +227,14 @@ img {
     object-position: center; /* Centra la imagen */
     border-radius: 0;
 }
-
+.fa-chevron-down {
+    font-size: 2em;
+    margin-top: 0.5em; /* Reduce el espacio aquí */
+  }
+  
+  #authors .container {
+    margin-top: -13em; /* Mueve el contenedor hacia arriba */
+  }
   
 /* Sección principal de newsletter */
 #newsletter-section {
@@ -241,11 +249,11 @@ img {
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
-    padding: 2.5em;
+    margin-left: 2.5em;
 }
 
 .small-title {
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: 600;
     color: #fff;
 }
@@ -254,13 +262,7 @@ img {
     font-size: 1.5em;
     font-weight: 600;
     color: #fff;
-    position: absolute;
-    margin-bottom: 4em; /* Puedes ajustar esto si necesitas cambiar la posición */
-}
-
-b, strong {
-    font-weight: bolder;
-    color: white;
+    margin-bottom: 1em;
 }
 
 .main-title {
@@ -290,19 +292,19 @@ b, strong {
 
 /* Columna de redes sociales */
 .social-media {
-    background-color: #ffa135;
+    background-color: #ff9822;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 7em;
-    max-width: 80%;
+    padding: 4em;
+    width: 40%;
 }
 
 .social-media .icons {
     display: flex;
     gap: 1.2em;
-    margin-top: 3em;
+    margin-top: 1em;
 }
 
 .social-media .icons a {
@@ -319,23 +321,18 @@ b, strong {
 #footer {
     background-color: #000;
     color: #fff;
-    padding: 2em 1em;
+    padding: 2em 5em;
 }
 
 .footer-links {
     display: flex;
-    justify-content: space-around;
-    margin-top: 1em; /* Reducido para menos espacio entre columnas */
-}
-
-.footer-column {
-    margin-bottom: 0; /* Asegura que no haya margen adicional */
+    justify-content: space-between;
 }
 
 .footer-column h3 {
     font-weight: 700;
     font-size: 1.2em;
-    margin-bottom: 0.5em; /* Ajustado para menos espacio */
+    margin-bottom: 0.5em;
 }
 
 .footer-column a {
@@ -352,4 +349,9 @@ b, strong {
     font-size: 0.8em;
     color: #777;
     text-align: center;
+}
+
+b, strong {
+    font-weight: bolder;
+    color: white;
 }
