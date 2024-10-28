@@ -139,3 +139,116 @@ img {
     border: 1px rgb(176, 102, 244) solid;
 }
 
+
+
+#talk_about {
+    padding: 4em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+
+
+
+}
+#talk_about > h1 {
+   
+    font-size: 2em;
+    color: white;
+    font-weight: bold;
+
+
+
+}
+.car-names {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea los elementos a la derecha */
+    position: relative; /* Permite que las líneas se posicionen correctamente */
+  }
+  
+  .car-names div {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+  }
+  
+  .car-names div h1 {
+    font-size: 4em;
+    color: white;
+    padding: 0 1em; /* Padding a los lados */
+    position: relative; /* Necesario para los pseudo-elementos */
+    transition: transform 0.3s ease, color 0.3s ease; /* Transición para agrandar y cambiar color */
+    display: inline-block; /* Para que las líneas puedan alinearse con el texto */
+  }
+  
+  .car-names h1::before,
+  .car-names h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px; /* Altura de las líneas */
+    background-color: transparent; /* Color inicial */
+    transition: width 0.3s ease, background-color 0.3s ease; /* Transición para el efecto de las líneas */
+    z-index: -1; /* Coloca las líneas detrás del texto */
+  }
+  
+  .car-names h1::before {
+    left: 0; /* Posición de la línea izquierda */
+    width: calc(50% - 1em); /* Extiende hasta el inicio de la palabra, considerando el padding */
+  }
+  
+  .car-names h1::after {
+    right: 0; /* Posición de la línea derecha */
+    width: calc(50% - 1em); /* Extiende hasta el final de la palabra, considerando el padding */
+  }
+  
+  .car-names div:hover h1 {
+    transform: scale(1.2); /* Agrandar el texto */
+    color: #f5871f; /* Cambiar color al hacer hover */
+  }
+  
+  .car-names div:hover h1::before,
+  .car-names div:hover h1::after {
+    background-color: #f5871f; /* Cambiar color de ambas líneas al hacer hover */
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
