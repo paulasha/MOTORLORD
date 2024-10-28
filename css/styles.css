@@ -153,6 +153,9 @@ img {
     flex-direction: row;
 
 }
+.brands_container > div > h1{
+   font-size: 3.5em;
+}
 .brands_container div:first-child{
   padding-right: 0.5em;
 
@@ -166,7 +169,7 @@ img {
 
 
 #element{
-    font-size: 2em;
+    font-size: 3em;
     color: #f5871f;
     font-weight: bold;
 }
@@ -178,6 +181,10 @@ img {
     padding: 1rem 2rem;
     background-color: rgb(213, 173, 251);
 }
+
+
+
+
 
 /* Efecto de superposición */
 .card {
@@ -235,6 +242,112 @@ img {
   #authors .container {
     margin-top: -13em; /* Mueve el contenedor hacia arriba */
   }
+
+
+
+
+
+
+
+/*Sección de hablemos de..
+*/
+#talk_about {
+    width: 100%;
+    height: 90vh;
+    padding: 4em 6em 4em 4em;
+  }
+  
+  #talk_about > div:first-child > h1 {
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+  }
+  
+  .cars-names {
+    padding-top: 6em;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+  }
+  
+  .cars-names div {
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
+  }
+  
+  .cars-names h1 {
+    font-size: 4em;
+    color: white;
+    padding: 0 1em;
+    position: relative;
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: inline-block;
+    z-index: 1;
+  }
+  
+  .cars-names h1::before,
+  .cars-names h1::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s ease, background-color 0.3s ease;
+    z-index: -1;
+  }
+  
+  .cars-names h1::before {
+    left: 0;
+    width: 0;
+  }
+  
+  .cars-names h1::after {
+    right: 0;
+    width: 0;
+  }
+  
+  .cars-names div:hover h1 {
+    transform: scale(1.2);
+    color: #f5871f;
+  }
+  
+  .cars-names div:hover h1::before {
+    background-color: #f5871f;
+    width: calc(100vw / 2 - 6em); /* Ajuste para cubrir casi toda la pantalla desde la izquierda */
+  }
+  
+  .cars-names div:hover h1::after {
+    background-color: #f5871f;
+    width: calc(100vw / 2 - 6em); /* Ajuste para cubrir casi toda la pantalla desde la derecha */
+  }
+  
+
+
+
+
+
+/*Noticias*/
+
+#news {
+    width: 100%;
+    height: 100vh;
+    background-color: #2b2f36;
+    padding: 4em;
+}
+#news > h1{
+   font-weight: bolder;
+   font-size: 3em;
+   color: #f5871f;
+}
+
+
+
+
+
+
+
   
 /* Sección principal de newsletter */
 #newsletter-section {
@@ -242,6 +355,8 @@ img {
     justify-content: space-between;
     background-color: #000;
     color: white;
+    height: 60vh;
+    width: 100%;
 }
 
 .newsletter-content {
@@ -326,6 +441,7 @@ img {
 
 .footer-links {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
 }
 
@@ -343,6 +459,14 @@ img {
     text-decoration: none;
     font-size: 0.9em;
 }
+.footer-columns  {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.footer-columns > div:last-child {
+   padding-right: 1em;
+}
+
 
 .footer-bottom {
     margin-top: 2em;
