@@ -240,7 +240,7 @@ img {
   }
   
   #authors .container {
-    margin-top: -13em; /* Mueve el contenedor hacia arriba */
+    margin-top: -17em; /* Mueve el contenedor hacia arriba */
   }
 
 
@@ -261,6 +261,7 @@ img {
     color: white;
     font-size: 3em;
     font-weight: bolder;
+    font-style: italic;
   }
   
   .cars-names {
@@ -365,6 +366,7 @@ img {
     justify-content: center;
     max-width: 50%;
     margin-left: 2.5em;
+    padding-top: 2em;
 }
 
 .small-title {
@@ -436,7 +438,7 @@ img {
 #footer {
     background-color: #000;
     color: #fff;
-    padding: 2em 5em;
+    padding: 3em 6em;
 }
 
 .footer-links {
@@ -464,7 +466,7 @@ img {
     flex-direction: row-reverse;
 }
 .footer-columns > div:last-child {
-   padding-right: 1em;
+   padding-right: em;
 }
 
 
