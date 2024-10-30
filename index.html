@@ -30,7 +30,7 @@
 </head>
 <body>
     <main>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiarybg-dark  sticky-top" data-bs-theme="dark">
           <div class="container-fluid">
             <a class="navbar-brand" href="#">
               <img src="media/img/motorlord_logo.png" alt="">
@@ -45,10 +45,10 @@
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Noticias</a>
+                  <a class="nav-link" href="#news">Noticias</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Sobre nosotros</a>
+                  <a class="nav-link" href="#about_us">Sobre nosotros</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -62,8 +62,30 @@
                 </li>
               </ul>
             </div>
+            <div class="container-search" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              <i class="fa-solid fa-magnifying-glass "></i>
+              
+            </div>
           </div>
         </nav>
+
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-dark text-light">
+              <div class="modal-header border-0">
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body d-flex justify-content-center align-items-center">
+                <div class="w-50">
+                  <input type="text" class="form-control form-control-lg bg-secondary text-light border-0" placeholder="Buscar...">
+                </div>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      
 
     
               
@@ -74,19 +96,24 @@
             </section>
             
             <section class="photos">
-                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="media/img/PORTADA_FERRARI.png" class="d-block w-100" data-bs-interval="20000" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/img/PORTADA_MERCEDES.png" class="d-block w-100" data-bs-interval="20000" alt="...">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="media/img/PORTADA_PORSCHE.png" class="d-block w-100" data-bs-interval="20000" alt="...">
-                      </div>
-                    </div>
+              <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-wrap="true">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active custom-indicator" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" class="custom-indicator" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="2" class="custom-indicator" aria-label="Slide 3"></button>
                 </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-bs-interval="7000">
+                    <img src="media/img/PORTADA_FERRARI.png" class="d-block w-100 mirror-image" alt="Ferrari">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7000">
+                    <img src="media/img/PORTADA_MERCEDES.png" class="d-block w-100 mirror-image" alt="Mercedes">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="7000">
+                    <img src="media/img/PORTADA_PORSCHE.png" class="d-block w-100 mirror-image" alt="Porsche">
+                  </div>
+                </div>
+              </div>
             </section>
           
    

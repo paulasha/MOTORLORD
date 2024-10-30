@@ -1,4 +1,7 @@
 
+/* Fuente Poppins desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 
 body {
     margin: 0;
@@ -19,6 +22,7 @@ img {
 
 .navbar {
     background-color: black !important;
+    z-index: 2;
 }
 .navbar-brand img{
     width: 200px
@@ -27,19 +31,74 @@ img {
   color: white;
 }
 
+.container-fluid {
+    padding: 1em;
+}
+.container-search {
+   color: white;
+   font-size: 2em;
+   padding: 0.5em;
+}
+.container-search:hover {
+   color:#f5871f;
+}
+
+#navbarNavDropdown{
+    font-size: 1.5em;
+    flex-direction: row-reverse;
+    
+ 
+}
+
+
+
+.dropdown-item{
+    font-size: 1.5em;
+}
+.dropdown-item:hover, .nav-link:hover {
+    color: #f5871f !important;
+}
+
+
+
+.bg-secondary {
+    --bs-bg-opacity: 1;
+    background-color: #f5871f !important;
+    border-radius: 0;
+    font-size: 1.5em;
+}
+
+.modal-content{
+    padding: 2em;
+}
+.btn-close {
+    font-size: 2em;
+}
+.btn-close:hover {
+    color: #f5871f !important;
+}
+
+
+
+
+
 /* Contenedor para el texto */
 #highlighted-text {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 50%;
     height: 100vh;
     color: white;
     display: flex;
     align-items: center;
+    padding-right: 4em;
     padding-left: 4em; /* Margen a la izquierda */
     font-family: 'Poppins', sans-serif;
     z-index: 1; /* Asegura que el texto esté encima del carrusel */
+}
+.text-container{
+    font-size: 1.5em;
 }
 
 /* Estilo del texto */
@@ -64,8 +123,31 @@ img {
     object-fit: cover; /* Para que la imagen se adapte sin distorsionarse */
 }
 
-/* Fuente Poppins desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+.carousel-indicators .custom-indicator.active {
+    background-color:#f5871f ; /* Naranja más oscuro para el indicador activo */
+}
+
+.carousel-indicators{
+ z-index: 1;
+   
+
+}
+.carousel-indicators .custom-indicator{
+    width: 100%;
+    height: 8px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color:#ff9822db;
+    margin-bottom: 9em;
+   
+
+}
+
+.mirror-image {
+    transform: scaleX(-1); /* Invierte la imagen horizontalmente */
+  }
+
 
 
 /* ABOUT US  */
@@ -139,7 +221,7 @@ img {
 
 #brands{
     width: 100%;
-    height: 70vh;
+    height: 100vh;
     background-color:black;
     display: flex;
     justify-content: center;
@@ -147,6 +229,8 @@ img {
     align-items: center;
     flex-direction: column;
     color: white;
+    padding: 4em;
+
 }
 .brands_container{
     display: flex;
@@ -187,6 +271,15 @@ img {
 
 
 /* Efecto de superposición */
+#authors{
+    width: 100%;
+    height: 100vh;
+   
+}
+#authors .container{
+  margin-top: 0;
+   
+}
 .card {
     position: relative;
     overflow: hidden;
@@ -237,11 +330,9 @@ img {
 .fa-chevron-down {
     font-size: 2em;
     margin-top: 0.5em; /* Reduce el espacio aquí */
-  }
+ }
   
-  #authors .container {
-    margin-top: -17em; /* Mueve el contenedor hacia arriba */
-  }
+
 
 
 
