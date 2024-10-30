@@ -359,7 +359,6 @@ img {
     padding-top: 6em;
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
     align-items: flex-end;
   }
   
@@ -407,14 +406,13 @@ img {
   
   .cars-names div:hover h1::before {
     background-color: #f5871f;
-    width: calc(100vw / 2 - 6em); /* Ajuste para cubrir casi toda la pantalla desde la izquierda */
+    width: calc(50vw - 4em); /* Ajuste para cubrir casi toda la pantalla desde la izquierda */
   }
   
   .cars-names div:hover h1::after {
     background-color: #f5871f;
-    width: calc(100vw / 2 - 6em); /* Ajuste para cubrir casi toda la pantalla desde la derecha */
+    width: calc(50vw - 4em); /* Ajuste para cubrir casi toda la pantalla desde la derecha */
   }
-  
 
 
 
