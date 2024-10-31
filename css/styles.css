@@ -582,8 +582,8 @@ h5{
 
 .footer-links {
     display: flex;
-    flex-direction: row-reverse;
     justify-content: space-between;
+    align-items: center;
 }
 
 .footer-column h3 {
@@ -636,26 +636,27 @@ b, strong {
 }
 
 /* Estilos para el pie de página Snowfest */
-#footer-snowfest {
+#footer-motorlord {
     margin-top: 3em;
     background-color: #000;
     color: #fff;
     font-size: 14px;
 }
 
-.snowfest-footer-content {
+.motorlord-footer-content {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
+    padding: 2em;
 }
 
-.snowfest-subscribe-section {
+.motorlord-subscribe-section {
     flex: 1 1 100%;
     margin-bottom: 30px;
 }
 
-.snowfest-subscribe-section h2 {
+.motorlord-subscribe-section h2 {
     color: #ff8b00;
     font-size: 25px;
     margin-bottom: 30px;
@@ -663,12 +664,12 @@ b, strong {
     font-weight: 600;
 }
 
-.snowfest-subscribe-form {
+.motorlord-subscribe-form {
     display: flex;
     gap: 10px;
 }
 
-.snowfest-subscribe-form input[type="email"] {
+.motorlord-subscribe-form input[type="email"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -676,7 +677,7 @@ b, strong {
     font-size: 14px;
 }
 
-.snowfest-subscribe-form button {
+.motorlord-subscribe-form button {
     background-color: #ff8b00;
     color: #fff;
     padding: 10px 20px;
@@ -687,7 +688,7 @@ b, strong {
 }
 
 /* Alinear las secciones en fila */
-.snowfest-links-section {
+.motorlord-links-section {
     display: flex;
     justify-content: space-around;
     flex: 1 1 100%;
@@ -695,51 +696,51 @@ b, strong {
     margin-top: 20px;
 }
 
-.snowfest-footer-column {
+.motorlord-footer-column {
     flex: 1;
 }
 
-.snowfest-footer-column h3 {
+.motorlord-footer-column h3 {
     font-size: 16px;
     color: #fff;
     margin-bottom: 10px;
 }
 
-.snowfest-footer-column ul {
+.motorlord-footer-column ul {
     list-style: none;
     padding: 0;
 }
 
-.snowfest-footer-column ul li {
+.motorlord-footer-column ul li {
     margin-bottom: 5px;
 }
 
-.snowfest-footer-column ul li a {
+.motorlord-footer-column ul li a {
     color: #ccc;
     text-decoration: none;
     font-size: 14px;
 }
 
-.snowfest-footer-column ul li a:hover {
+.motorlord-footer-column ul li a:hover {
     color: #ff8b00;
 }
 
-.snowfest-payment-icons, .snowfest-social-icons {
+.motorlord-payment-icons, .motorlord-social-icons {
     display: flex;
     gap: 15px;
     font-size: 24px;
 }
 
-.snowfest-payment-icons i, .snowfest-social-icons i {
+.motorlord-payment-icons i, .motorlord-social-icons i {
     color: #fff;
 }
 
-.snowfest-payment-icons i:hover, .snowfest-social-icons i:hover {
+.motorlord-payment-icons i:hover, .motorlord-icons i:hover {
     color: #ff8b00;
 }
 
 /* Sección inferior del footer */
-.snowfest-footer-bottom {
+.motorlord-footer-bottom {
     border-top: 1px solid #555;
     padding-top: 10px;
     text-align: center;
@@ -748,7 +749,15 @@ b, strong {
     margin-top: 50px;
 }
 
-.snowfest-footer-bottom strong {
+.motorlord-footer-bottom strong {
     color: #fff;
     font-weight: bold;
+}
+
+.footer-brand img{
+    width: 500px;
+
+}
+.footer-brand{
+  padding: 1em;
 }
