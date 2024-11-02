@@ -281,7 +281,11 @@ img {
     padding: 2em;
    
 }
-
+#authors .cont{
+  margin-top: 0;
+  height: 50vh;
+   
+}
 
 .cont{
     display: flex;
@@ -644,7 +648,7 @@ b, strong {
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 20px;
-    padding: 2em;
+    padding: 5em;
 }
 
 .motorlord-subscribe-section {
