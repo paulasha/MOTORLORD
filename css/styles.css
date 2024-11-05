@@ -283,7 +283,7 @@ img {
 }
 #authors .cont{
   margin-top: 0;
-  height: 50vh;
+  height: 100%;
    
 }
 
@@ -369,8 +369,9 @@ img {
     font-weight: bolder;
     font-style: italic;
     margin-top: 2em;
-}
-  
+  }
+
+
   .cars-names {
     padding-top: 6em;
     display: flex;
@@ -387,50 +388,32 @@ img {
   .cars-names h1 {
     font-size: 4em;
     color: white;
-    padding: 0 1em;
+    padding: 0 1em 0 15em;
     position: relative;
     transition: transform 0.3s ease, color 0.3s ease;
     display: inline-block;
     z-index: 1;
   }
   
-  .cars-names h1::before,
-  .cars-names h1::after {
-    content: "";
+  .cars-names h1 .line {
     position: absolute;
-    top: 50%;
     height: 2px;
-    background-color: transparent;
-    transition: width 0.3s ease, background-color 0.3s ease;
-    z-index: -1;
-  }
-  
-  .cars-names h1::before {
+    width: 0;
+    background-color: #f5871f;
+    top: 50%;
     left: 0;
-    width: 0;
-  }
-  
-  .cars-names h1::after {
-    right: 0;
-    width: 0;
+    transition: width 0.3s ease;
+    margin-right: 1em; /* Espacio antes del texto */
   }
   
   .cars-names div:hover h1 {
-    transform: scale(1.2);
+    transform: translateX(-10px); /* Mueve un poco el texto hacia la izquierda */
     color: #f5871f;
   }
   
-  .cars-names div:hover h1::before {
-    background-color: #f5871f;
-    width: calc(50vw - 4em); /* Ajuste para cubrir casi toda la pantalla desde la izquierda */
-  }
-  
-  .cars-names div:hover h1::after {
-    background-color: #f5871f;
-    width: calc(50vw - 4em); /* Ajuste para cubrir casi toda la pantalla desde la derecha */
-  }
-
-
+  .cars-names div:hover h1 .line {
+    width: calc(15em - 1em);
+}
 
 
 
