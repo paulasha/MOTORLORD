@@ -1003,7 +1003,7 @@ b, strong {
         align-items: center;
     }
     .brands_container > div > h1 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .main-title {
         font-size: 2em;
@@ -1051,12 +1051,12 @@ b, strong {
     }
 
     .motorlord-links-section {
-    display: flex;
-    justify-content: space-around;
-    flex: 1 1 100%;
-    text-align: left;
-    margin-top: 20px;
-    flex-wrap: wrap;
+        display: flex;
+        justify-content: space-around;
+        flex: 1 1 100%;
+        text-align: left;
+        margin-top: 20px;
+        flex-wrap: wrap;
      }
 }
 
