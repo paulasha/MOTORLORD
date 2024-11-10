@@ -248,13 +248,13 @@ a {
 
 
 @media screen and (max-width: 768px) {
-    .grid-wrapper > div {
+  .grid-wrapper > div {
         grid-column: span 2;
         grid-row: span 2;
-    }
+  }
 
 
-    .content {
+  .content {
       display: flex;
       padding: 7em;
       width: 100%;
@@ -293,9 +293,26 @@ a {
     color: rgb(199, 193, 193);
   }
 
-  
+  .text-rightt {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 12em;
+    right: 10%;
+    border-bottom: none;
+    padding-right: 1rem;
+    max-width: 400px;
+}
+.text-right {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: -9em;
+  right: 10%;
+  border-bottom: 3px solid #f57c00;
+  padding-right: 1rem;
+  max-width: 400px;
+}
 
-  
+
 }
 
 
@@ -338,54 +355,33 @@ a {
     display: none;
   }
 
+  
+
+
+
+
   .text-rightt {
     font-size: 1.2rem;
     position: absolute;
-    bottom: 70%;
+    bottom: -20em;
     right: 10%;
-    border-bottom: 3px solid #f57c00;
+    border-bottom: none;
     padding-right: 1rem;
     max-width: 400px;
     padding-left: 1em;
-}
-
-.text-right {
-  font-size: 1rem;
-  position: absolute;
-  bottom: 114%;
-  right: 10%;
-  border-bottom: none;
-  padding-right: 1rem;
-  max-width: 400px;
-  padding-left: 1em;
+  }
 
 
-}
-
-
-
-.text-rightt {
-  font-size: 1.2rem;
-  position: absolute;
-  bottom: -20em;
-  right: 10%;
-  border-bottom: none;
-  padding-right: 1rem;
-  max-width: 400px;
-  padding-left: 1em;
-}
-
-
-.text-right {
-  font-size: 1rem;
-  position: absolute;
-  bottom: -16em;
-  right: 10%;
-  border-bottom: none;
-  padding-right: 1rem;
-  max-width: 400px;
-  padding-left: 1em;
-}
+  .text-right {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: -16em;
+    right: 10%;
+    border-bottom: none;
+    padding-right: 1rem;
+    max-width: 400px;
+    padding-left: 1em;
+  }
   
 }
 

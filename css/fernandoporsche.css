@@ -256,11 +256,181 @@ h1 {
 
 
 
+
+
+
+a {
+  color: #f57c00;
+  text-decoration: none;
+}
+
+
+
 @media screen and (max-width: 768px) {
-    .grid-wrapper > div {
+  .grid-wrapper > div {
         grid-column: span 2;
         grid-row: span 2;
-    }
+  }
+
+
+  .content {
+      display: flex;
+      padding: 7em;
+      width: 100%;
+      flex-direction: column;
+  }
+
+  .right-section {
+    flex: 1;
+    padding-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+
+
+  .right-line {
+    right: 40px;
+    top: 5%;
+  }
+
+
+  .left-line {
+    left: 40px;
+    top: 55%;
+  }
+  h1 {
+    font-size: 3em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #FF8B2B;
+    margin-top: 2em;
+  }
+  .text-carl h1 {
+    margin: 0;
+    font-size: 1em;
+    color:rgb(39, 110, 46);
+  }
+  .text-right {
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 1em;
+    right: 10%;
+    border-bottom: none;
+    padding-right: 1rem;
+    max-width: 400px;
+    padding-left: 1em;
+}
+
+ 
+
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  #gallery {
+    background-color: #2b2f36;
+    margin: 0 auto;
+    padding: 2em;
+  }
+
+
+  h1 {
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #FF8B2B;
+    margin-top: 2em;
+  }
+
+  .content {
+    display: flex;
+    padding: 3em;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    width: 100%;
+    position: relative;
+    height: 135vh;
+}
+
+  .text-carl {
+    margin-right: 19em;
+    display: none;
+  }
+
+  
+.text-right {
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 31em;
+  right: 10%;
+  border-bottom: none;
+  padding-right: 1rem;
+  max-width: 400px;
+  padding-left: 1em;
+}
+  
+
+
+
+
+
+
+
+
+ 
+  
+}
+
+@media only screen and (max-width: 992px) {
+  .text-carl h1 {
+    margin: 0;
+    font-size: 1em;
+    color:rgb(39, 110, 46);
+  }
+
+  .text-carl {
+    margin-right: 14em;
+ }
+
+ 
+
+
+
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .text-carl h1 {
+    margin: 0;
+    font-size: 1em;
+    color:rgb(39, 110, 46);
+  }
+
+  .text-carl {
+    margin-right: 14em;
+ }
+
+
+
+
+
 }
 
 

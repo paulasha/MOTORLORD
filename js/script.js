@@ -19,3 +19,6 @@ var typed = new Typed('#element', {
     loop: true,
 });
 
+
+AOS.init();
+
